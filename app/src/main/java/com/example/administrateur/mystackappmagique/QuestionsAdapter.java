@@ -11,16 +11,12 @@ import android.widget.TextView;
 
 import com.example.administrateur.mystackappmagique.api.pojo.Item;
 import com.example.administrateur.mystackappmagique.database.AppDatabase;
-import com.example.administrateur.mystackappmagique.database.Favoris;
 import com.squareup.picasso.Picasso;
 
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.ViewHolder> {
 
