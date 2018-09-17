@@ -1,4 +1,4 @@
-package com.example.administrateur.mystackappmagique;
+package com.example.administrateur.mystackappmagique.Fragments;
 
 
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.administrateur.mystackappmagique.QuestionsAdapter;
+import com.example.administrateur.mystackappmagique.R;
 import com.example.administrateur.mystackappmagique.api.StackClient;
 import com.example.administrateur.mystackappmagique.api.StackServiceInterface;
 import com.example.administrateur.mystackappmagique.api.pojo.Questions;
