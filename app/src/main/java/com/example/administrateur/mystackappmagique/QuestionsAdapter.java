@@ -18,7 +18,7 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
 
     private List<Item> questions;
 
-    QuestionsAdapter(List<Item> questions){
+    public QuestionsAdapter(List<Item> questions){
         this.questions = questions;
     }
 
