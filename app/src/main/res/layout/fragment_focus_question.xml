@@ -12,16 +12,6 @@
         tools:src="#444"/>
 
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/favorikiki"
-        android:src="@drawable/ic_menu_send"
-        android:clickable="true"
-
-        />
-
-    
 
     <LinearLayout
         android:layout_width="wrap_content"

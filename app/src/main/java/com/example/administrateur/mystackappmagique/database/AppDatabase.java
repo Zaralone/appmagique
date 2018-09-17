@@ -19,5 +19,5 @@ public abstract class AppDatabase extends RoomDatabase {
         return INSTANCE;
     }
 
-    public abstract FavorisDao favorisDaoDao();
+    public abstract FavorisDao favorisDao();
 }
