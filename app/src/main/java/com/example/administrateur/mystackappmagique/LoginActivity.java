@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.btnLogin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.toString().equals("root") && password.toString().equals("666") ){
+                if ((username.getText().toString().equals("root"))  && (password.getText().toString().equals("666") )){
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
                 }else {
