@@ -50,29 +50,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        /*----------------------------------------------------------Modifs pour afficher la liste de machins------------------------------------------------------------------------------------------------*/
 
-        final RecyclerView recyclerView = findViewById(R.id.recyclerview);
-
-        StackServiceInterface service =
-                StackClient.getClient().create(StackServiceInterface.class);
-
-        service.getQuestions().enqueue(new Callback<Questions>() {
-            @Override
-            public void onResponse(Call<Questions> call, Response<Questions> response) {
-                if (response.isSuccessful()){
-                    QuestionsAdapter adapter = new QuestionsAdapter(response.body().getItems());
-                    recyclerView.setAdapter(adapter);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<Questions> call, Throwable t) {
-
-            }
-        });
-
-        /*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
     }
 
     @Override
