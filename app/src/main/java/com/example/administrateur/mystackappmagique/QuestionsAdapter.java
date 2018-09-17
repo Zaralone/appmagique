@@ -12,7 +12,12 @@ import com.example.administrateur.mystackappmagique.api.pojo.Item;
 import com.squareup.picasso.Picasso;
 
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.ViewHolder> {
 
@@ -44,7 +49,7 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.View
     public void onBindViewHolder(@NonNull QuestionsAdapter.ViewHolder holder, int position) {
         Item item = questions.get(position);
         holder.txtQuestion.setText(item.getTitle());
-        holder.txtDate.setText("" + item.getCreationDate());
+        holder.txtDate.setText("" + new SimpleDateFormat("dd-MM-yyyy").format(new Date(item.getCreationDate())) );
         Picasso.get().load(item.getOwner().getProfileImage()).into(holder.imgProfil);
     }
 

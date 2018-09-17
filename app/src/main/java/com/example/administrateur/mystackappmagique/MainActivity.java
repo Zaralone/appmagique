@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.administrateur.mystackappmagique.Fragments.DernieresQuestionsFragment;
+
+import com.example.administrateur.mystackappmagique.Fragments.DernieresQuestionsFragment;
 import com.example.administrateur.mystackappmagique.Fragments.Favoris;
 import com.example.administrateur.mystackappmagique.Fragments.Settings;
 
