@@ -13,6 +13,10 @@ import android.view.MenuItem;
 
 import com.example.administrateur.mystackappmagique.Fragments.DernieresQuestionsFragment;
 
+import com.example.administrateur.mystackappmagique.Fragments.DernieresQuestionsFragment;
+import com.example.administrateur.mystackappmagique.Fragments.Favoris;
+import com.example.administrateur.mystackappmagique.Fragments.Settings;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -63,8 +67,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+        case R.id.action_settings:
+            changeFragment(new Settings());
         }
 
         return super.onOptionsItemSelected(item);
@@ -75,18 +80,13 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_question) {
-            changeFragment(new DernieresQuestionsFragment());
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        switch (id) {
+            case R.id.nav_question :
+                changeFragment(new DernieresQuestionsFragment());
+                break;
+            case R.id.nav_favoris :
+                changeFragment(new Favoris());
+                break;
 
         }
 
