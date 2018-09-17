@@ -11,7 +11,7 @@ import java.util.List;
 @Dao
 public interface FavorisDao {
 
-    @Query("SELECT * FROM Favoris")
+    @Query("SELECT * FROM Item")
     List<Item> getAllFavoris();
 
     @Insert
