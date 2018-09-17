@@ -11,6 +11,7 @@ public class Favoris {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
+
     private ImageView image;
     private String description;
     private Date date;
